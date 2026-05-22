@@ -6,7 +6,7 @@
       cursor.style.top = `${event.clientY}px`;
     });
 
-    document.querySelectorAll("a, button, .feature-card, .plan-card, .step, .faq-item").forEach((element) => {
+    document.querySelectorAll("a, button, .feature-card, .plan-card, .step, .faq-item, .donate-card").forEach((element) => {
       element.addEventListener("mouseenter", () => cursor.classList.add("big"));
       element.addEventListener("mouseleave", () => cursor.classList.remove("big"));
     });
@@ -27,6 +27,32 @@
     link.addEventListener("click", () => {
       nav.classList.remove("open");
       toggle.setAttribute("aria-expanded", "false");
+    });
+  });
+})();
+
+(function () {
+  const copyButtons = document.querySelectorAll("[data-copy-wallet]");
+  if (!copyButtons.length) return;
+
+  copyButtons.forEach((button) => {
+    button.addEventListener("click", async () => {
+      const value = button.closest(".donate-card")?.querySelector(".wallet-address")?.textContent.trim();
+      if (!value) return;
+
+      try {
+        await navigator.clipboard.writeText(value);
+        const originalText = button.textContent;
+        button.textContent = "Скопировано";
+        button.classList.add("copied");
+
+        window.setTimeout(() => {
+          button.textContent = originalText;
+          button.classList.remove("copied");
+        }, 1600);
+      } catch {
+        button.textContent = "Не скопировано";
+      }
     });
   });
 })();
