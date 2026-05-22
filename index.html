@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShadowVPN — быстрый VPN в Telegram</title>
+  <meta name="description" content="ShadowVPN — стабильный VPN с подписками Wi-Fi и LTE, ежедневными обновлениями конфигураций и управлением через Telegram.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@300;400;500;600;700&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="cursor" aria-hidden="true"></div>
+
+  <div class="page-bg" aria-hidden="true">
+    <div class="grid-bg"></div>
+  </div>
+
+  <header class="site-header">
+    <a class="logo" href="#home" aria-label="ShadowVPN">
+      <span class="logo-dot"></span>
+      <span>ShadowVPN</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="nav" aria-label="Основная навигация">
+      <a href="#advantages">Возможности</a>
+      <a href="#plans">Тарифы</a>
+      <a href="#setup">Подключение</a>
+      <a href="#faq">FAQ</a>
+      <a class="nav-cta" href="https://t.me/NetShadowVPN_bot" target="_blank" rel="noopener">Купить VPN</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content reveal">
+        <div class="eyebrow">// VMESS · VLESS · Hysteria · Reality</div>
+        <h1><span class="outline">Свобода в сети</span><br>без лишних настроек</h1>
+        <p class="hero-lead">ShadowVPN работает через Telegram-бота: выбираете подписку, получаете ссылку, добавляете ее в клиент и подключаетесь. Конфигурации обновляются ежедневно.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://t.me/NetShadowVPN_bot" target="_blank" rel="noopener">Открыть бота</a>
+          <a class="btn btn-secondary" href="https://docs.shadowvpn.io" target="_blank" rel="noopener">Документы</a>
+        </div>
+        <dl class="hero-stats" aria-label="Показатели сервиса">
+          <div>
+            <dt>99%</dt>
+            <dd>uptime SLA</dd>
+          </div>
+          <div>
+            <dt>0</dt>
+            <dd>логов трафика</dd>
+          </div>
+          <div>
+            <dt>24/7</dt>
+            <dd>поддержка</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section" id="advantages">
+      <div class="section-head reveal">
+        <div class="eyebrow">// Почему ShadowVPN</div>
+        <h2>VPN для повседневного доступа, стриминга и работы</h2>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card reveal">
+          <span class="feature-mark">01</span>
+          <h3>Ежедневные обновления</h3>
+          <p>Серверы и конфигурации регулярно обновляются, а подписка автоматически подтягивает изменения в совместимом клиенте.</p>
+        </article>
+        <article class="feature-card reveal">
+          <span class="feature-mark">02</span>
+          <h3>Wi-Fi и LTE отдельно</h3>
+          <p>Разные профили под домашний интернет и мобильные сети. Можно выбрать только нужный тип или взять Premium.</p>
+        </article>
+        <article class="feature-card reveal">
+          <span class="feature-mark">03</span>
+          <h3>Современные протоколы</h3>
+          <p>VLESS, VMESS, Reality, Hysteria, gRPC, xHTTP и Shadowsocks в одной экосистеме.</p>
+        </article>
+        <article class="feature-card reveal">
+          <span class="feature-mark">04</span>
+          <h3>Без логов трафика</h3>
+          <p>Сервис не хранит историю посещений и содержимое трафика. Управление подпиской остается простым и прозрачным.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section plans-section" id="plans">
+      <div class="section-head reveal">
+        <div class="eyebrow">// Тарифы</div>
+        <h2>Выберите подписку ShadowVPN</h2>
+      </div>
+
+      <div class="plans-grid">
+        <article class="plan-card reveal">
+          <div class="plan-kicker">Standard</div>
+          <h3>Standard</h3>
+          <p class="plan-price">от 99₽</p>
+          <ul>
+            <li>До 3 устройств Wi-Fi</li>
+            <li>До 3 устройств LTE</li>
+            <li>Безлимитный трафик Wi-Fi серверов</li>
+            <li>30 ГБ трафика LTE серверов</li>
+          </ul>
+          <div class="price-options" aria-label="Цены Standard">
+            <span>1 месяц — 99₽</span>
+            <span>3 месяца — 269₽</span>
+            <span>6 месяцев — 499₽</span>
+            <span>1 год — 899₽</span>
+          </div>
+          <a class="plan-link" href="https://t.me/NetShadowVPN_bot" target="_blank" rel="noopener">Купить</a>
+        </article>
+
+        <article class="plan-card featured reveal">
+          <div class="plan-badge">Популярный</div>
+          <div class="plan-kicker">Premium</div>
+          <h3>Premium</h3>
+          <p class="plan-price">от 249₽</p>
+          <ul>
+            <li>До 6 устройств Wi-Fi</li>
+            <li>До 6 устройств LTE</li>
+            <li>Безлимитный Wi-Fi трафик</li>
+            <li>LTE: 45 ГБ/день</li>
+          </ul>
+          <div class="price-options" aria-label="Цены Premium">
+            <span>1 месяц — 249₽</span>
+            <span>3 месяца — 679₽</span>
+            <span>6 месяцев — 1259₽</span>
+            <span>1 год — 2269₽</span>
+          </div>
+          <a class="plan-link primary" href="https://t.me/NetShadowVPN_bot" target="_blank" rel="noopener">Купить</a>
+        </article>
+
+        <article class="plan-card soon reveal">
+          <div class="plan-badge muted">Soon</div>
+          <div class="plan-kicker">Team</div>
+          <h3>Team</h3>
+          <p class="plan-price">по согласованию</p>
+          <ul>
+            <li>До 100 устройств</li>
+            <li>Выделенные серверы</li>
+            <li>SLA 99%+</li>
+            <li>Приоритетная поддержка</li>
+            <li>Подключение через менеджера</li>
+          </ul>
+          <a class="plan-link" href="https://t.me/NetShadowVPN_bot" target="_blank" rel="noopener">Купить</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section split" id="setup">
+      <div class="split-copy reveal">
+        <div class="eyebrow">// Быстрый старт</div>
+        <h2>Подключение занимает пару минут</h2>
+        <p>Вся покупка и выдача подписки происходит в Telegram. Инструкции подходят для популярных клиентов: Karing, V2RayNG, Shadowrocket, V2RayTun, Happ и других.</p>
+        <a class="btn btn-primary" href="https://t.me/NetShadowVPN_bot" target="_blank" rel="noopener">Начать подключение</a>
+      </div>
+      <div class="steps">
+        <article class="step reveal">
+          <span>01</span>
+          <h3>Откройте бота</h3>
+          <p>Перейдите в @NetShadowVPN_bot и выберите нужный тип подписки.</p>
+        </article>
+        <article class="step reveal">
+          <span>02</span>
+          <h3>Оплатите тариф</h3>
+          <p>Доступны банковская карта, СБП и криптовалюта.</p>
+        </article>
+        <article class="step reveal">
+          <span>03</span>
+          <h3>Добавьте ссылку</h3>
+          <p>Скопируйте подписку в совместимый VPN-клиент.</p>
+        </article>
+        <article class="step reveal">
+          <span>04</span>
+          <h3>Подключайтесь</h3>
+          <p>Выберите сервер и пользуйтесь стабильным доступом.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq">
+      <div class="section-head reveal">
+        <div class="eyebrow">// Вопросы</div>
+        <h2>Что обычно спрашивают перед покупкой</h2>
+      </div>
+      <div class="faq-grid">
+        <article class="faq-item reveal">
+          <h3>Чем отличаются Wi-Fi и LTE подписки?</h3>
+          <p>Wi-Fi профили рассчитаны на домашние и офисные сети, LTE — на мобильных операторов. У каждого типа отдельные лимиты устройств.</p>
+        </article>
+        <article class="faq-item reveal">
+          <h3>Сколько устройств можно подключить?</h3>
+          <p>Standard дает до 3 устройств Wi-Fi и до 3 устройств LTE. Premium дает до 6 устройств Wi-Fi и до 6 устройств LTE.</p>
+        </article>
+        <article class="faq-item reveal">
+          <h3>Какие клиенты поддерживаются?</h3>
+          <p>Karing, V2RayNG, Shadowrocket, V2RayTun, Happ, Incy и другие клиенты, которые умеют работать с подписками.</p>
+        </article>
+        <article class="faq-item reveal">
+          <h3>Где получить поддержку?</h3>
+          <p>Поддержка доступна в Telegram через @ShadowVpnSupport_bot. Для Team-тарифа предусмотрен приоритетный контакт.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta-section reveal">
+      <div>
+        <div class="eyebrow">// Telegram ecosystem</div>
+        <h2>Готовы подключиться?</h2>
+        <p>Откройте бота, выберите тариф и получите подписку сразу после оплаты.</p>
+      </div>
+      <a class="btn btn-primary" href="https://t.me/NetShadowVPN_bot" target="_blank" rel="noopener">Купить VPN</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <a class="logo" href="#home"><span class="logo-dot"></span><span>ShadowVPN</span></a>
+      <p>VMESS / VLESS / Hysteria / Reality. Все управление — в Telegram.</p>
+    </div>
+    <div class="footer-links">
+      <a href="https://t.me/ShadowVpn_net" target="_blank" rel="noopener">Канал</a>
+      <a href="https://t.me/NetShadowVPN_bot" target="_blank" rel="noopener">Бот</a>
+      <a href="https://t.me/ShadowVpnSupport_bot" target="_blank" rel="noopener">Поддержка</a>
+      <a href="https://docs.shadowvpn.io" target="_blank" rel="noopener">Документы</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
