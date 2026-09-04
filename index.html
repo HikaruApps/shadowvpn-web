@@ -31,6 +31,7 @@
       <a href="#advantages">Возможности</a>
       <a href="#plans">Тарифы</a>
       <a href="#setup">Подключение</a>
+      <a href="#shadowdns">ShadowDNS</a>
       <a href="#faq">FAQ</a>
       <a href="donate.html">Поддержать</a>
       <a class="nav-cta" href="https://t.me/NetShadowVPN_bot" target="_blank" rel="noopener">Купить VPN</a>
@@ -212,6 +213,87 @@
       </div>
     </section>
 
+
+    <section class="section dns-section" id="shadowdns">
+      <div class="dns-hero reveal">
+        <div>
+          <div class="eyebrow">// ShadowDNS</div>
+          <div class="dns-title-row">
+            <h2>ShadowDNS</h2>
+            <span class="dns-beta">BETA</span>
+          </div>
+          <p class="dns-lead">Собственный DNS-сервис ShadowVPN для тех случаев, когда публичные DNS-сервисы становятся менее доступными. ShadowDNS использует собственную рекурсивную инфраструктуру, поддерживает шифрование DNS-запросов и не передаёт их публичным DNS-провайдерам.</p>
+        </div>
+      </div>
+
+      <div class="dns-grid">
+        <article class="dns-card reveal">
+          <span class="feature-mark">01</span>
+          <h3>Приватность</h3>
+          <ul>
+            <li>Не ведём логи DNS-запросов и не сохраняем историю запрашиваемых доменов.</li>
+            <li>Поддерживаем шифрование DNS-трафика через DoH и DoT.</li>
+            <li>Не используем Google DNS, Cloudflare DNS и другие публичные DNS-сервисы в качестве апстримов.</li>
+            <li>ShadowDNS самостоятельно выполняет рекурсивный DNS-резолвинг.</li>
+            <li>DNS-запросы не передаются сторонним публичным DNS-провайдерам.</li>
+          </ul>
+        </article>
+
+        <article class="dns-card reveal">
+          <span class="feature-mark">02</span>
+          <h3>Меньше рекламы и слежки</h3>
+          <ul>
+            <li>Блокировка рекламных доменов на уровне DNS.</li>
+            <li>Фильтрация известных трекеров и аналитических сервисов.</li>
+            <li>Работает системно — не только в браузере, но и в приложениях.</li>
+          </ul>
+        </article>
+
+        <article class="dns-card reveal">
+          <span class="feature-mark">03</span>
+          <h3>Производительность</h3>
+          <ul>
+            <li>Кэширование часто запрашиваемых доменов.</li>
+            <li>Собственная инфраструктура без зависимости от публичных DNS Google и Cloudflare.</li>
+            <li>Интеграция с инфраструктурой ShadowVPN.</li>
+          </ul>
+        </article>
+
+        <article class="dns-card reveal">
+          <span class="feature-mark">04</span>
+          <h3>Безопасность</h3>
+          <ul>
+            <li>Поддержка DNSSEC для проверки подлинности DNS-ответов.</li>
+            <li>DoH и DoT защищают DNS-трафик между устройством и ShadowDNS.</li>
+            <li>Для пользователей ShadowVPN DNS может использоваться автоматически внутри VPN.</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="dns-connect reveal">
+        <div class="dns-connect-copy">
+          <div class="eyebrow">// Как подключить</div>
+          <h3>Используйте ShadowDNS напрямую</h3>
+          <p>Выберите подходящий защищённый протокол DNS в настройках устройства, системы или браузера.</p>
+        </div>
+        <div class="dns-endpoints">
+          <div class="dns-endpoint">
+            <span>Android / iOS · DoT</span>
+            <code>dns.shadowvpn.io</code>
+          </div>
+          <div class="dns-endpoint">
+            <span>Windows / браузеры · DoH</span>
+            <a href="https://dns.shadowvpn.io/dns-query" target="_blank" rel="noopener"><code>https://dns.shadowvpn.io/dns-query</code></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="dns-beta-note reveal">
+        <span class="dns-beta">BETA</span>
+        <p>ShadowDNS пока находится в стадии Beta. Мы экспериментируем с инфраструктурой, фильтрацией и производительностью, поэтому в процессе работы возможны изменения и небольшие проблемы. Будем рады отзывам, найденным багам и предложениям — обратная связь поможет определить, каким ShadowDNS станет после выхода из Beta.</p>
+      </div>
+    </section>
+
     <section class="cta-section reveal">
       <div>
         <div class="eyebrow">// Telegram ecosystem</div>
@@ -231,6 +313,7 @@
       <a href="https://t.me/ShadowVpn_net" target="_blank" rel="noopener">Канал</a>
       <a href="https://t.me/NetShadowVPN_bot" target="_blank" rel="noopener">Бот</a>
       <a href="https://t.me/ShadowVpnSupport_bot" target="_blank" rel="noopener">Поддержка</a>
+      <a href="#shadowdns">ShadowDNS</a>
       <a href="https://docs.shadowvpn.io" target="_blank" rel="noopener">Документы</a>
       <a href="donate.html">Поддержать</a>
     </div>
