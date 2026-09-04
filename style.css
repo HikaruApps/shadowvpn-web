@@ -262,6 +262,23 @@ h1 {
   border-color: var(--violet);
 }
 
+
+.brand-note {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  margin-top: 1rem;
+  color: var(--muted);
+  font-family: "DM Mono", monospace;
+  font-size: .72rem;
+  letter-spacing: .08em;
+}
+
+.brand-note span {
+  color: var(--mint);
+  font-weight: 600;
+}
+
 .hero-stats {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -655,6 +672,20 @@ h2 {
   color: var(--muted);
   font-size: .86rem;
   line-height: 1.6;
+}
+
+
+.footer .footer-brand {
+  margin-top: .3rem;
+  color: var(--muted);
+  font-family: "DM Mono", monospace;
+  font-size: .68rem;
+  letter-spacing: .06em;
+}
+
+.footer .footer-brand strong {
+  color: var(--mint);
+  font-weight: 600;
 }
 
 .footer-links {
