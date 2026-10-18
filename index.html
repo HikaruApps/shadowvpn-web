@@ -5,23 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ShadowVPN — быстрый VPN в Telegram</title>
   <meta name="description" content="ShadowVPN — стабильный VPN с подписками Wi-Fi и LTE, ежедневными обновлениями конфигураций и управлением через Telegram.">
+  <meta name="theme-color" content="#050706">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@300;400;500;600;700&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=20260904-3">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=20261018-1">
 </head>
 <body>
-  <div id="cursor" aria-hidden="true"></div>
-
   <div class="page-bg" aria-hidden="true">
     <div class="grid-bg"></div>
   </div>
 
   <header class="site-header">
-    <a class="logo" href="#home" aria-label="ShadowVPN">
-      <span class="logo-dot"></span>
-      <span>ShadowVPN</span>
-    </a>
+    <a class="logo" href="#home" aria-label="ShadowVPN">shadow<span>:</span>vpn</a>
     <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
       <span></span>
       <span></span>
@@ -39,36 +35,92 @@
   </header>
 
   <main>
-    <section class="hero" id="home">
+    <section class="hero frame" id="home">
+      <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
       <div class="hero-content reveal">
-        <div class="eyebrow">// VMESS · VLESS · Hysteria · Reality</div>
-        <h1><span class="outline">Свобода в сети</span><br>без лишних настроек</h1>
-        <p class="hero-lead">ShadowVPN работает через Telegram-бота: выбираете подписку, получаете ссылку, добавляете ее в клиент и подключаетесь. Конфигурации обновляются ежедневно.</p>
-        <p class="brand-note"><span>ShadowNet Group</span> · работаем с марта 2026 года</p>
+        <div class="eyebrow">VMESS · VLESS · Hysteria · Reality</div>
+        <h1>Свобода в сети <span class="accent">без лишних</span> настроек</h1>
+        <p class="hero-lead">ShadowVPN работает через Telegram-бота: выбираете подписку, получаете ссылку, добавляете её в клиент и подключаетесь. Конфигурации обновляются ежедневно.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="https://t.me/NetShadowVPN_bot" target="_blank" rel="noopener">Открыть бота</a>
+          <a class="btn btn-primary" href="https://t.me/NetShadowVPN_bot" target="_blank" rel="noopener">Открыть бота <i>▸</i></a>
           <a class="btn btn-secondary" href="https://docs.shadowvpn.io" target="_blank" rel="noopener">Документы</a>
         </div>
-        <dl class="hero-stats" aria-label="Показатели сервиса">
-          <div>
-            <dt>99%</dt>
-            <dd>uptime SLA</dd>
-          </div>
-          <div>
-            <dt>0</dt>
-            <dd>логов трафика</dd>
-          </div>
-          <div>
-            <dt>24/7</dt>
-            <dd>поддержка</dd>
-          </div>
-        </dl>
+        <p class="brand-note"><span>ShadowNet Group</span> · работаем с марта 2026 года</p>
       </div>
+
+      <div class="hero-map reveal" aria-hidden="true">
+        <img src="assets/world-map.svg" alt="" width="1000" height="383">
+        <svg class="map-overlay" viewBox="0 0 1000 383" preserveAspectRatio="xMidYMid meet">
+          <defs>
+            <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+              <stop offset="0" stop-color="#2bf5a4" stop-opacity=".35"/>
+              <stop offset="1" stop-color="#2bf5a4" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <circle cx="640" cy="150" r="230" fill="url(#glow)"/>
+          <g class="routes">
+            <path d="M604 68 Q 560 40 524 83"/>
+            <path d="M604 68 Q 640 120 640 150"/>
+            <path d="M524 83 Q 580 160 640 150"/>
+            <path d="M640 150 Q 780 90 888 123"/>
+            <path d="M640 150 Q 720 220 789 219"/>
+            <path d="M294 109 Q 430 40 524 83"/>
+          </g>
+          <g class="nodes">
+            <circle cx="524" cy="83" r="4"/>
+            <circle cx="514" cy="77" r="3"/>
+            <circle cx="569" cy="55" r="3"/>
+            <circle cx="581" cy="108" r="3"/>
+            <circle cx="714" cy="103" r="3"/>
+            <circle cx="888" cy="123" r="4"/>
+            <circle cx="789" cy="219" r="4"/>
+            <circle cx="294" cy="109" r="4"/>
+            <circle cx="700" cy="40" r="3"/>
+            <circle cx="420" cy="60" r="3"/>
+          </g>
+          <g class="pulses">
+            <circle cx="524" cy="83" r="4"/>
+            <circle cx="888" cy="123" r="4"/>
+            <circle cx="294" cy="109" r="4"/>
+          </g>
+          <g class="device">
+            <rect x="596" y="60" width="16" height="16" transform="rotate(45 604 68)"/>
+            <rect x="600" y="64" width="8" height="8" transform="rotate(45 604 68)"/>
+          </g>
+          <g class="shield">
+            <rect x="590" y="100" width="100" height="100" transform="rotate(45 640 150)"/>
+            <rect x="572" y="82" width="136" height="136" class="shield-outline" transform="rotate(45 640 150)"/>
+            <path d="M628 128 l12 -12 l12 12" class="chev"/>
+            <path d="M628 172 l12 12 l12 -12" class="chev"/>
+          </g>
+        </svg>
+        <div class="map-tag device-tag"><b>Ваше устройство</b><span>tunnel:active</span></div>
+        <div class="map-tag shield-tag">◂ Защищено ▸</div>
+      </div>
+
+      <div class="hero-bottom">
+        <dl class="hero-stats" aria-label="Показатели сервиса">
+          <div><dt>99%</dt><dd>uptime SLA</dd></div>
+          <div><dt>0</dt><dd>логов трафика</dd></div>
+          <div><dt>24/7</dt><dd>поддержка</dd></div>
+        </dl>
+        <ul class="proto-list" aria-label="Протоколы">
+          <li>VLESS</li>
+          <li>Reality</li>
+          <li>Hysteria</li>
+          <li>Shadowsocks</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="manifest reveal" aria-label="О сервисе">
+      <span class="quote-mark" aria-hidden="true">“</span>
+      <p><span class="accent">Стабильный доступ к интернету без лишних настроек.</span> Отдельные профили для Wi-Fi и LTE, современные протоколы, собственный DNS и управление подпиской прямо в Telegram.</p>
     </section>
 
     <section class="section" id="advantages">
       <div class="section-head reveal">
-        <div class="eyebrow">// Почему ShadowVPN</div>
+        <div class="eyebrow">Почему ShadowVPN</div>
         <h2>VPN для повседневного доступа, стриминга и работы</h2>
       </div>
       <div class="feature-grid">
@@ -90,14 +142,14 @@
         <article class="feature-card reveal">
           <span class="feature-mark">04</span>
           <h3>Без логов трафика</h3>
-          <p>Сервис не хранит историю посещений и содержимое трафика. Управление подпиской остается простым и прозрачным.</p>
+          <p>Сервис не хранит историю посещений и содержимое трафика. Управление подпиской остаётся простым и прозрачным.</p>
         </article>
       </div>
     </section>
 
     <section class="section plans-section" id="plans">
       <div class="section-head reveal">
-        <div class="eyebrow">// Тарифы</div>
+        <div class="eyebrow">Тарифы</div>
         <h2>Выберите подписку ShadowVPN</h2>
       </div>
 
@@ -113,10 +165,10 @@
             <li>LTE трафик — 120 ГБ/месяц</li>
           </ul>
           <div class="price-options" aria-label="Цены Standard">
-            <span>1 месяц — 149₽</span>
-            <span>3 месяца — 399₽</span>
-            <span>6 месяцев — 749₽</span>
-            <span>12 месяцев — 1349₽</span>
+            <span>1 месяц <b>149₽</b></span>
+            <span>3 месяца <b>399₽</b></span>
+            <span>6 месяцев <b>749₽</b></span>
+            <span>12 месяцев <b>1349₽</b></span>
           </div>
           <a class="plan-link" href="https://t.me/NetShadowVPN_bot" target="_blank" rel="noopener">Купить</a>
         </article>
@@ -133,10 +185,10 @@
             <li>LTE трафик — 30 ГБ/день (с возможностью расширения)</li>
           </ul>
           <div class="price-options" aria-label="Цены Premium">
-            <span>1 месяц — 249₽</span>
-            <span>3 месяца — 679₽</span>
-            <span>6 месяцев — 1259₽</span>
-            <span>1 год — 2269₽</span>
+            <span>1 месяц <b>249₽</b></span>
+            <span>3 месяца <b>679₽</b></span>
+            <span>6 месяцев <b>1259₽</b></span>
+            <span>1 год <b>2269₽</b></span>
           </div>
           <a class="plan-link primary" href="https://t.me/NetShadowVPN_bot" target="_blank" rel="noopener">Купить</a>
         </article>
@@ -160,10 +212,10 @@
 
     <section class="section split" id="setup">
       <div class="split-copy reveal">
-        <div class="eyebrow">// Быстрый старт</div>
+        <div class="eyebrow">Быстрый старт</div>
         <h2>Подключение занимает пару минут</h2>
         <p>Вся покупка и выдача подписки происходит в Telegram. Инструкции подходят для популярных клиентов: Karing, V2RayNG, Shadowrocket, V2RayTun, Happ и других.</p>
-        <a class="btn btn-primary" href="https://t.me/NetShadowVPN_bot" target="_blank" rel="noopener">Начать подключение</a>
+        <a class="btn btn-primary" href="https://t.me/NetShadowVPN_bot" target="_blank" rel="noopener">Начать подключение <i>▸</i></a>
       </div>
       <div class="steps">
         <article class="step reveal">
@@ -191,7 +243,7 @@
 
     <section class="section faq" id="faq">
       <div class="section-head reveal">
-        <div class="eyebrow">// Вопросы</div>
+        <div class="eyebrow">Вопросы</div>
         <h2>Что обычно спрашивают перед покупкой</h2>
       </div>
       <div class="faq-grid">
@@ -201,7 +253,7 @@
         </article>
         <article class="faq-item reveal">
           <h3>Сколько устройств можно подключить?</h3>
-          <p>Standard дает до 3 устройств Wi-Fi и до 3 устройств LTE. Premium дает до 6 устройств Wi-Fi и до 6 устройств LTE.</p>
+          <p>Standard даёт до 3 устройств Wi-Fi и до 3 устройств LTE. Premium даёт до 6 устройств Wi-Fi и до 6 устройств LTE.</p>
         </article>
         <article class="faq-item reveal">
           <h3>Какие клиенты поддерживаются?</h3>
@@ -214,14 +266,13 @@
       </div>
     </section>
 
-
     <section class="section dns-section" id="shadowdns">
       <div class="section-head dns-hero reveal">
-        <div class="eyebrow">// ShadowDNS</div>
-          <div class="dns-title-row">
-            <h2>ShadowDNS</h2>
-            <span class="dns-beta">BETA</span>
-          </div>
+        <div class="eyebrow">ShadowDNS</div>
+        <div class="dns-title-row">
+          <h2>ShadowDNS</h2>
+          <span class="dns-beta">BETA</span>
+        </div>
         <p class="dns-lead">Собственный DNS-сервис ShadowVPN для тех случаев, когда публичные DNS-сервисы становятся менее доступными. ShadowDNS использует собственную рекурсивную инфраструктуру, поддерживает шифрование DNS-запросов и не передаёт их публичным DNS-провайдерам.</p>
       </div>
 
@@ -271,7 +322,7 @@
 
       <div class="dns-connect reveal">
         <div class="dns-connect-copy">
-          <div class="eyebrow">// Как подключить</div>
+          <div class="eyebrow">Как подключить</div>
           <h3>Используйте ShadowDNS напрямую</h3>
           <p>Выберите подходящий защищённый протокол DNS в настройках устройства, системы или браузера.</p>
         </div>
@@ -293,20 +344,21 @@
       </div>
     </section>
 
-    <section class="cta-section reveal">
+    <section class="cta-section frame reveal">
+      <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
       <div>
-        <div class="eyebrow">// Telegram ecosystem</div>
+        <div class="eyebrow">Telegram ecosystem</div>
         <h2>Готовы подключиться?</h2>
         <p>Откройте бота, выберите тариф и получите подписку сразу после оплаты.</p>
       </div>
-      <a class="btn btn-primary" href="https://t.me/NetShadowVPN_bot" target="_blank" rel="noopener">Купить VPN</a>
+      <a class="btn btn-primary" href="https://t.me/NetShadowVPN_bot" target="_blank" rel="noopener">Купить VPN <i>▸</i></a>
     </section>
   </main>
 
   <footer class="footer">
     <div>
-      <a class="logo" href="#home"><span class="logo-dot"></span><span>ShadowVPN</span></a>
-      <p>VMESS / VLESS / Hysteria / Reality. Все управление — в Telegram.</p>
+      <a class="logo" href="#home">shadow<span>:</span>vpn</a>
+      <p>VMESS / VLESS / Hysteria / Reality. Всё управление — в Telegram.</p>
       <p class="footer-brand">Проект <strong>ShadowNet Group</strong> · работаем с марта 2026 года.</p>
     </div>
     <div class="footer-links">
