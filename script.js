@@ -1,19 +1,4 @@
 (function () {
-  const cursor = document.getElementById("cursor");
-  if (cursor && window.matchMedia("(hover: hover)").matches) {
-    document.addEventListener("mousemove", (event) => {
-      cursor.style.left = `${event.clientX}px`;
-      cursor.style.top = `${event.clientY}px`;
-    });
-
-    document.querySelectorAll("a, button, .feature-card, .plan-card, .step, .faq-item, .donate-card").forEach((element) => {
-      element.addEventListener("mouseenter", () => cursor.classList.add("big"));
-      element.addEventListener("mouseleave", () => cursor.classList.remove("big"));
-    });
-  }
-})();
-
-(function () {
   const toggle = document.querySelector(".menu-toggle");
   const nav = document.querySelector(".nav");
   if (!toggle || !nav) return;
