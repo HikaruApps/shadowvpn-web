@@ -394,8 +394,8 @@ h3 {
 }
 
 .device-tag {
-  right: calc(100% - 60.4% + 18px);
-  top: 17.8%;
+  right: calc(100% - 52.4% + 18px);
+  top: 23.8%;
   transform: translateY(-50%);
   display: grid;
   gap: 4px;
